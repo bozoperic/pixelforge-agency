@@ -34,7 +34,7 @@ Stranica mora izgledati profesionalno i moderno, kao da je napravljena za pravog
 
 ```bash
 # 1. Kloniraj repo
-git clone https://github.com/[username]/pixelforge-agency.git
+git clone https://github.com/bozoperic/pixelforge-agency.git
 cd pixelforge-agency
 
 # 2. Napravi branch
