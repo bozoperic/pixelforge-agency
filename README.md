@@ -19,10 +19,10 @@ Stranica mora izgledati profesionalno i moderno, kao da je napravljena za pravog
 
 | Uloga | Učenik | Branch | Zadatak |
 |-------|--------|--------|---------|
-| **Lead Developer** | *(upišite ime)* | `feature/hero-navigacija` + `feature/tim-kontakt` | Navbar, Hero, Tim sekcija, Kontakt forma, koordinacija |
-| **UI Developer 1** | *(upišite ime)* | `feature/usluge` | Sekcija usluga s 6 kartica |
-| **UI Developer 2** | *(upišite ime)* | `feature/portfolio` | Portfolio galerija s modalima |
-| **CSS Developer** | *(upišite ime)* | `feature/css-footer` | Cijeli `style.css`, varijable, footer |
+| **Lead Developer** | *(Dino Čitak)* | `feature/hero-navigacija` + `feature/tim-kontakt` | Navbar, Hero, Tim sekcija, Kontakt forma, koordinacija |
+| **UI Developer 1** | *(Adin Cero)* | `feature/usluge` | Sekcija usluga s 6 kartica |
+| **UI Developer 2** | *(Luka Barun)* | `feature/portfolio` | Portfolio galerija s modalima |
+| **CSS Developer** | *(Antonio Garić)* | `feature/css-footer` | Cijeli `style.css`, varijable, footer |
 
 > **CSS Developer** postavlja `:root` varijable i boje **prvi** i mergea ih u main — ostali čekaju taj merge kako bi znali koje klase koristiti.
 
