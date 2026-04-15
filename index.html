@@ -84,7 +84,234 @@
     <!-- TODO: Jedan modal koji prikazuje detalje projekta.
          Velika slika, naslov, kategorija, opis, link gumb. -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelForge Agency</title>
 
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white text-dark">
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+
+    <!-- NASLOV -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Portfolio</h2>
+      <p class="text-secondary">Check out some of our latest projects</p>
+    </div>
+
+    <!-- NAV PILLS -->
+    <ul class="nav nav-pills justify-content-center mb-4">
+      <li class="nav-item"><a class="nav-link active">All</a></li>
+      <li class="nav-item"><a class="nav-link">Web</a></li>
+      <li class="nav-item"><a class="nav-link">Brand</a></li>
+      <li class="nav-item"><a class="nav-link">Print</a></li>
+    </ul>
+
+    <!-- GRID -->
+    <div class="row">
+
+      <!-- CARD 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project1/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-primary mb-2">Web</span>
+            <h5 class="card-title">Startup Website</h5>
+            <p class="card-text">Modern landing page for tech startup.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project2/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Brand</span>
+            <h5 class="card-title">Brand Identity</h5>
+            <p class="card-text">Complete branding for new company.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project3/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-warning mb-2">Print</span>
+            <h5 class="card-title">Poster Design</h5>
+            <p class="card-text">Creative poster for marketing campaign.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project4/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-primary mb-2">Web</span>
+            <h5 class="card-title">E-commerce Store</h5>
+            <p class="card-text">Online shop with modern UI.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project5/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Brand</span>
+            <h5 class="card-title">Logo Collection</h5>
+            <p class="card-text">Professional logo designs.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/project6/600/400" class="card-img-top">
+          <div class="card-body">
+            <span class="badge bg-warning mb-2">Print</span>
+            <h5 class="card-title">Magazine Layout</h5>
+            <p class="card-text">Editorial design for magazine.</p>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODALI -->
+
+<div class="modal fade" id="portfolioModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Startup Website</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project1/800/500" class="img-fluid mb-3">
+        <p>Modern responsive website built for startup.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="portfolioModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Brand Identity</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project2/800/500" class="img-fluid mb-3">
+        <p>Complete branding package.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="portfolioModal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Poster Design</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project3/800/500" class="img-fluid mb-3">
+        <p>Creative marketing poster.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="portfolioModal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>E-commerce Store</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project4/800/500" class="img-fluid mb-3">
+        <p>Modern online shop design.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="portfolioModal5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Logo Collection</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project5/800/500" class="img-fluid mb-3">
+        <p>Minimal logo designs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="portfolioModal6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Magazine Layout</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/seed/project6/800/500" class="img-fluid mb-3">
+        <p>Editorial layout design.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
