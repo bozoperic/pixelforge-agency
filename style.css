@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #0d0d0d;
+  --accent-color: #00d4ff;
+  --text-color: #ffffff;
+  --gray-color: #b0b0b0;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+
+footer {
+  background-color: #000;
+  color: var(--text-color);
+  padding: 60px 0 20px;
+}
+
+.footer-title {
+  font-family: var(--font-heading);
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: var(--gray-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--accent-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray-color);
+}
