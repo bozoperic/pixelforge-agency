@@ -9,81 +9,165 @@
 </head>
 <body>
 
-    <!-- ============================================
-         NAVIGACIJA + HERO — radi: [Lead Dev]
-         Branch: feature/hero-navigacija
-         ============================================ -->
-
-    <!-- TODO: Navbar — tamna pozadina, logo "PixelForge",
-         linkovi: Usluge, Portfolio, Tim, Kontakt.
-         Sticky top. Na mobitelu hamburger meni.
-
-         Hero: tamna pozadina, min-height 100vh,
-         veliki naslov, podnaslov, CTA gumb "Pogledaj naš rad"
-         i sekundarni gumb "Kontaktiraj nas". -->
-
-
-    <!-- ============================================
-         USLUGE — radi: [UI Dev 1]
-         Branch: feature/usluge
-         ============================================ -->
-
-    <!-- TODO: Sekcija "Naše usluge".
-         6 kartica u gridu (col-md-4, col-lg-4):
-         - Web dizajn
-         - Web development
-         - SEO optimizacija
-         - Grafički dizajn
-         - Social media
-         - Konzultacije
-
-         Svaka kartica: ikona (emoji), naslov, kratki opis,
-         Badge s cijenom ili oznakom (npr. "Najpopularnije").
-         Hover efekt (CSS). -->
-
-
-    <!-- ============================================
-         PORTFOLIO — radi: [UI Dev 2]
-         Branch: feature/portfolio
-         ============================================ -->
-
-    <!-- TODO: Sekcija "Portfolio".
-         Bootstrap nav-pills kao vizualni filter (Web / Brand / Print) — samo izgled, bez JS.
-         Galerija: 6 kartica s projektima u gridu (col-md-4).
-         Svaka kartica: slika (picsum), naslov projekta,
-         badge s kategorijom, gumb "Pogledaj" koji otvara modal
-         s većom slikom i opisom projekta. -->
-
-
-    <!-- ============================================
-         TIM + KONTAKT — radi: [Lead Dev]
-         Branch: feature/tim-kontakt
-         ============================================ -->
-
-    <!-- TODO: Sekcija "Naš tim" — 3 ili 4 člana tima.
-         Svaki: slika (zaobljena), ime, pozicija, opis.
-         Grid: col-md-3 ili col-md-4.
-
-         Sekcija "Kontakt":
-         Forma: ime, email, budžet (select), opis projekta (textarea).
-         Pored forme: adresa, email, telefon. -->
-
-
-    <!-- ============================================
-         FOOTER — radi: [CSS Dev]
-         Branch: feature/css-footer
-         ============================================ -->
-
-    <!-- TODO: Footer s logom, kratkim opisom agencije,
-         navigacijskim linkovima u kolonama,
-         social media ikonama (emoji ili tekst)
-         i copyright retkom. Tamna pozadina. -->
-
-
-    <!-- Modal za portfolio projekte -->
-    <!-- TODO: Jedan modal koji prikazuje detalje projekta.
-         Velika slika, naslov, kategorija, opis, link gumb. -->
-
+     <section id="usluge" class="py-5 bg-dark text-light">
+        <div class="container py-lg-4">
+            <div class="row align-items-end g-3 mb-4">
+                <div class="col-lg-7">
+                    <h2 class="display-6 fw-bold mb-2">Naše usluge</h2>
+                    <p class="text-white-50 mb-0">
+                        Gradimo moderne brendove i digitalna rješenja — od dizajna do isporuke.
+                        Odaberi uslugu i krenimo.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                        <strong>Promo:</strong> Besplatan mini audit (30 min) za nove klijente ovaj tjedan.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Zatvori"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Design</span>
+                            <span class="badge text-bg-primary">Najpopularnije</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">🎨</div>
+                            <h3 class="h5 fw-bold">Web dizajn</h3>
+                            <p class="text-body-secondary mb-3">
+                                UX/UI dizajn koji izgleda moderno i vodi korisnika prema konverziji.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">Wireframe + prototip</li>
+                                <li class="list-group-item">Design system</li>
+                                <li class="list-group-item">Mobile-first</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#kontakt" class="btn btn-outline-primary w-100">Zatraži ponudu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Development</span>
+                            <span class="badge text-bg-success">Brza isporuka</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">🧩</div>
+                            <h3 class="h5 fw-bold">Web development</h3>
+                            <p class="text-body-secondary mb-3">
+                                Izrada responzivnih stranica i landing pageova uz čiste performanse.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">Bootstrap 5 layout</li>
+                                <li class="list-group-item">SEO-friendly struktura</li>
+                                <li class="list-group-item">Optimizacija brzine</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#portfolio" class="btn btn-outline-primary w-100">Pogledaj primjere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Growth</span>
+                            <span class="badge text-bg-warning">SEO</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">🔎</div>
+                            <h3 class="h5 fw-bold">SEO optimizacija</h3>
+                            <p class="text-body-secondary mb-3">
+                                Poboljšaj vidljivost na Google-u uz tehnički i sadržajni SEO.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">On-page optimizacija</li>
+                                <li class="list-group-item">Tehnički audit</li>
+                                <li class="list-group-item">Plan sadržaja</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#kontakt" class="btn btn-outline-primary w-100">Dogovori audit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Brand</span>
+                            <span class="badge text-bg-secondary">Identitet</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">🧠</div>
+                            <h3 class="h5 fw-bold">Grafički dizajn</h3>
+                            <p class="text-body-secondary mb-3">
+                                Logotip, vizualni identitet i materijali koji grade povjerenje.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">Logo + varijante</li>
+                                <li class="list-group-item">Brand guidelines</li>
+                                <li class="list-group-item">Print priprema</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#kontakt" class="btn btn-outline-primary w-100">Krenimo s brendom</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Social</span>
+                            <span class="badge text-bg-danger">Kampanje</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">📣</div>
+                            <h3 class="h5 fw-bold">Social media</h3>
+                            <p class="text-body-secondary mb-3">
+                                Strategija sadržaja i vizuali za društvene mreže koji donose rezultate.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">Content plan</li>
+                                <li class="list-group-item">Dizajn objava</li>
+                                <li class="list-group-item">Kampanje</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#kontakt" class="btn btn-outline-primary w-100">Zatraži strategiju</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 service-card border-0">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="small text-uppercase fw-semibold">Strategy</span>
+                            <span class="badge text-bg-dark">1:1</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon mb-3">🧭</div>
+                            <h3 class="h5 fw-bold">Konzultacije</h3>
+                            <p class="text-body-secondary mb-3">
+                                Brzi smjer i plan: što raditi, kojim redom i kako mjeriti uspjeh.
+                            </p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">Roadmap</li>
+                                <li class="list-group-item">Analiza konkurencije</li>
+                                <li class="list-group-item">KPI i metrike</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0">
+                            <a href="#kontakt" class="btn btn-outline-primary w-100">Rezerviraj termin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
